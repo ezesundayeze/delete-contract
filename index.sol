@@ -8,11 +8,6 @@ contract Kill {
     function kill() external {
         selfdestruct(payable(msg.sender));
     }
-
-    function testCall() external pure returns (uint) {
-        return 123;
-    }
-
     
 }
 
